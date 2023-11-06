@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>History:</h1>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="list-group">
+        <div class="d-flex flex-wrap">
+          <div
+            class="list-group-item col-3"
+            *ngFor="let searchedName of nameHistoryList; let i = index"
+          >
+            <h4>{{ searchedName.name }}</h4>
+            <p>Gender: {{ searchedName.gender }}</p>
+            <p>Male Percentage: {{ searchedName.malePercentage }}</p>
+            <p>Female Percentage: {{ searchedName.femalePercentage }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
